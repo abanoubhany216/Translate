@@ -23,6 +23,7 @@ header img{
     height: 25px;
     text-align: center;
 }
+
 .app .inputs{
     display: flex;
     justify-content: space-evenly;
@@ -44,6 +45,24 @@ header img{
     cursor: pointer;
     user-select: none;
 }
+.app #sub{
+    border: 0;
+    outline: none;
+    background: none;
+    box-shadow: 0 0 10px 0 lightgreen;
+    height: 25px;
+    width: 64px;
+    margin-top: 100px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.app #sub:hover{
+    background-color: lightgreen;
+    color: white;
+}
 .app #result{
     font-family:'Times New Roman', Times, serif;
     text-align: center;
@@ -55,9 +74,12 @@ header img{
     resize: none;
 }
 @media(max-width:640px) {
-
-    .app .inputs .speak,.app .inputs .copy{
+.app .inputs .speak,.app .inputs .copy{
         width: 15px;
         height: 15px;
+    }
+    .app #cancel{
+        left: 37%;
+    top: 28%;
     }
 }
